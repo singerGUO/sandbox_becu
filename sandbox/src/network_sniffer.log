@@ -1,0 +1,10 @@
+11:47:26.489826 IP ip-172-31-59-50.ec2.internal.56476 > s3-us-west-2-r-w.amazonaws.com.https: Flags [.], ack 2498936980, win 445, options [nop,nop,TS val 89019171 ecr 3437368391], length 0
+11:47:26.495835 IP ip-172-31-59-50.ec2.internal.ssh > 97-113-43-201.tukw.qwest.net.62429: Flags [P.], seq 3493659684:3493659880, ack 1675446700, win 3914, length 196
+11:47:26.498189 IP ip-172-31-59-50.ec2.internal.51238 > ip-172-31-0-2.ec2.internal.domain: 33301+ PTR? 11.81.5.3.in-addr.arpa. (40)
+11:47:26.547563 IP 97-113-43-201.tukw.qwest.net.62429 > ip-172-31-59-50.ec2.internal.ssh: Flags [.], ack 0, win 4127, length 0
+11:47:26.552307 IP ip-172-31-0-2.ec2.internal.domain > ip-172-31-59-50.ec2.internal.51238: 33301 1/0/0 PTR s3-us-west-2-r-w.amazonaws.com. (84)
+11:47:26.552471 IP ip-172-31-59-50.ec2.internal.55330 > ip-172-31-0-2.ec2.internal.domain: 11904+ PTR? 50.59.31.172.in-addr.arpa. (43)
+11:47:26.553958 IP ip-172-31-0-2.ec2.internal.domain > ip-172-31-59-50.ec2.internal.55330: 11904 1/0/0 PTR ip-172-31-59-50.ec2.internal. (85)
+11:47:26.554080 IP ip-172-31-59-50.ec2.internal.43180 > ip-172-31-0-2.ec2.internal.domain: 59102+ PTR? 201.43.113.97.in-addr.arpa. (44)
+11:47:26.555487 IP ip-172-31-0-2.ec2.internal.domain > ip-172-31-59-50.ec2.internal.43180: 59102 1/0/0 PTR 97-113-43-201.tukw.qwest.net. (86)
+11:47:26.555548 IP ip-172-31-59-50.ec2.internal.37671 > ip-172-31-0-2.ec2.internal.domain: 635+ PTR? 2.0.31.172.in-addr.arpa. (41)
