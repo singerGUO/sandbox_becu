@@ -1,5 +1,7 @@
 #!/bin/bash
 
+curl www.google.com
+
 count=0
 number=2
 
