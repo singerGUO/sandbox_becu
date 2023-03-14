@@ -3,7 +3,7 @@
 Set up environment:
 
 ```
-./scripts/start_app.sh
+./scripts/env.sh
 pip3 install requirements.txt
 ```
 
