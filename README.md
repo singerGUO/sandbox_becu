@@ -7,7 +7,8 @@ Set up environment:
 pip3 install requirements.txt
 ```
 
-Install Azure CLI and download AzCopy
+Install [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) and download [AzCopy](https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)
+Login to your azure account
 
 ```
 az login
