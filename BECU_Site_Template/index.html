@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BECU Sandbox</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <ul>
+      <li><img src="img/logo.PNG"></li>
+      <li><p><b>SANDBOX</b></p></li>
+    </ul>
+    <div>
+      <div>
+      <h2>ANALYSIS SETTINGS </h2>
+      </div>
+    </div>
+    <div>
+      <div>
+  
+        <label for="os">Operating System: </label>
+        <select name="os" id="os">
+          <option value="Ws">-- Choose an operating system --</option>
+          <option value="W10">Windows 10</option>
+          <option value="W7">Windows 7</option>
+          <option value="WXP">Windows XP</option>
+          <option value="RHEL 8.7">RHEL</option>
+          <option value="Ubuntu">Ubuntu</option>
+        </select>
+      </div>
+      <div id="hidden_div">
+        <label for="iso">Image: </label>
+        <select name="iso" id="iso">
+          <option value="W1">-- Choose an image --</option>
+          <option value="W2">v22H2 (10/18/22)</option>
+          <option value="W2">v20H2 (10/20/20)</option>
+          <option value="RHEL 8.7">v1809 (11/13/18)</option>
+          <option value="audi">v1607 (8/2/16)</option>
+        </select>
+      </div>
+      <div id="hidden_div2">
+        <label for="fname">Malware Upload:</label>
+        URL
+        <input type="text" id="fname" name="fname">
+        or
+        <button type="button">UPLOAD FILE</button>  
+      </div>
+      <div>
+        <button type="button" id="submit" class="disabled">SUBMIT ANALYSIS</button>
+      </div>
+    </div>
+    <div id="hidden_div3">
+      <div>
+        <h2>RESULTS</h2>
+        Relevant files below have been uploaded to the linked Azure account.
+      </div>
+      <div id="results">
+        <div class="res">Snapshots
+          <p>Here is a list of snapshot files taken during analysis</p>
+        </div>
+        <div class="res">Network Activity
+          <p>Here are some pcap files</p>
+        </div>
+        <div class="res">File changes
+          <p>Here are some logged changes to system files</p>
+        </div>
+      </div>
+    </div>
+	<script src="index.js"></script>
+  </body>
+</html>
