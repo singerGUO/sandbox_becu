@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BECU Sandbox</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+
   </head>
   <body>
     <ul>
-      <li><img src="img/logo.PNG"></li>
+      <li><img src="static/img/logo.PNG"></li>
       <li><p><b>SANDBOX</b></p></li>
     </ul>
     <div>
@@ -68,6 +69,13 @@
         </div>
       </div>
     </div>
-	<script src="index.js"></script>
+	<script src="static/index.js"></script>
+    <form method="POST">
+        <input type="submit" value="Get Data">
+    </form>
+    {% if data %}
+        <h2>Response Data:</h2>
+        <pre>{{ data }}</pre>
+    {% endif %}
   </body>
 </html>
