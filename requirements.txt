@@ -2,3 +2,5 @@ python-magic
 uvicorn
 fastapi
 python-multipart
+flask
+requests

@@ -75,7 +75,28 @@
     </form>
     {% if data %}
         <h2>Response Data:</h2>
-        <pre>{{ data }}</pre>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Target</th>
+                    <th>Status</th>
+                    <th>Started On</th>
+                    <th>Completed On</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for task in data['tasks'] %}
+                    <tr>
+                        <td>{{ task['id'] }}</td>
+                        <td>{{ task['target'] }}</td>
+                        <td>{{ task['status'] }}</td>
+                        <td>{{ task['started_on'] }}</td>
+                        <td>{{ task['completed_on'] }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     {% endif %}
   </body>
 </html>
